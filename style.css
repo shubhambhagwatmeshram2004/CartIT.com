@@ -686,8 +686,8 @@ h1,h2,h3,h4,p{
 
 .product-card:hover{
   box-shadow:0 14px 28px rgba(20,16,74,.12);
-  transform:translateX(-3px);
-  transform:translateY(-9px);
+  transform:translateY(-3px);
+  transform: scale(1.02);
 }
 
 
@@ -807,7 +807,13 @@ h1,h2,h3,h4,p{
   object-fit: cover;
   height: 140px;
   width: 150px;
-  transform: translateZ(-9);
+  transition: transform 0.8s ease;
+}
+
+.img-cards:hover{
+  transform: 2s;
+  transform: scale(1.1); /* makes card bigger */
+  transform: translateX(-9);
 }
 
 
